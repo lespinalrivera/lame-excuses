@@ -1,0 +1,29 @@
+{
+  "name": "lame-excuses",
+  "version": "1.0.0",
+  "description": "Generate Lame Excuses",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lespinalrivera/lame-excuses.git"
+  },
+  "keywords": [
+    "lame-excuses",
+    "excuses",
+    "sorry",
+    "im-late",
+    "excuse-generator"
+  ],
+  "author": "Luis Espinal <luis@typow.ca> (https://typow.ca/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lespinalrivera/lame-excuses/issues"
+  },
+  "homepage": "https://github.com/lespinalrivera/lame-excuses#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
