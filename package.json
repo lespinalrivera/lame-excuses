@@ -1,9 +1,10 @@
 {
   "name": "lame-excuses",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "Generate Lame Excuses",
   "main": "src/index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -29,7 +30,12 @@
   },
   "devDependencies": {
     "chai": "4.0.2",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
     "mocha": "3.4.2",
     "semantic-release": "^6.3.6"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
