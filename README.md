@@ -1,4 +1,4 @@
-# Project Title
+# Lame Excuses Generator
 
 **Lame Excuse Generator** - Here is an npm micro-library to get a quick random excuse.
 
@@ -8,9 +8,10 @@
 
 ### Prerequisites
 
-(Updated until here)
 
-Explain what things are needed to install the software.
+1- Download Nodejs form [Nodejs.org](https://nodejs.org/)
+
+(Updated until here)
 
 ```
 Give examples
@@ -32,7 +33,7 @@ Give a list from the beginning to the end
 until finished
 ```
 
-End with an example of they should see in their dev environment 
+End with an example of they should see in their dev environment
 
 ```
 (A screenshot would be good here)
