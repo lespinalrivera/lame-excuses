@@ -2,6 +2,14 @@
 
 **Lame Excuse Generator** - Here is an npm micro-library to get a quick random excuse.
 
+[![Travis Build](https://img.shields.io/travis/lespinalrivera/lame-excuses.svg?style=flat-square)](https://travis-ci.org/lespinalrivera/lame-excuses)
+[![Downloads](https://img.shields.io/npm/dt/lame-excuses.svg?style=flat-square)](https://www.npmjs.com/package/lame-excuses)
+[![Coverage](https://img.shields.io/codecov/c/github/lespinalrivera/lame-excuses.svg?style=flat-square)](https://codecov.io/gh/lespinalrivera/lame-excuses)
+[![Npm-Version](https://img.shields.io/npm/v/lame-excuses.svg?style=flat-square)](https://www.npmjs.com/package/lame-excuses)
+[![Issues](https://img.shields.io/github/issues/lespinalrivera/lame-excuses.svg?style=flat-square)](https://github.com/lespinalrivera/lame-excuses/issues)
+[![License](https://img.shields.io/npm/l/lame-excuses.svg?style=flat-square)](https://github.com/lespinalrivera/lame-excuses/blob/master/LICENSE)
+[![Stars](https://img.shields.io/github/stars/lespinalrivera/lame-excuses.svg?style=social&label=Star)](https://github.com/lespinalrivera/lame-excuses/stargazers)
+
 ## Getting Started
 
 1- Run `npm install lame-excuses`
@@ -17,15 +25,15 @@
 Give examples
 ```
 
-### Installing
+### Using this Library
 
-A step by step series of examples that tell you have to get a development env running
+Accepted Commands:
 
-Say what the step will be
+random()
 
-```
-Give the example
-```
+all
+
+random(n)
 
 Give a list from the beginning to the end
 
@@ -65,28 +73,30 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Angular.js](https://angularjs.org/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Anyother Tool used](https://github.com/Surrey-Code-Camp/Templates) - Used to generate (Anything else)
+* [Nodejs](https://nodejs.org/) - The web framework used
+* [travis-ci](https://travis-ci.org/) - Build Management
+* [semantic-release](https://github.com/semantic-release/cli) - Automatic Release Versioning
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/Surrey-Code-Camp/Templates)/*To be updated later.*/ for details on our code of conduct, and the process for submitting pull requests to us.
+Anyone can help make this project better - For a list of previous contributors check and the process for submitting pull requests to us: [Contributors.md](https://github.com/lespinalrivera/lame-excuses/blob/master/Contributors.md).
 
 ## Versioning
 
-###### Version control  1.0.0
+###### Automatic Version Control done by semantic-release.
+
+Corrent Version: [![Npm-Version](https://img.shields.io/npm/v/lame-excuses.svg?style=flat-square)](https://www.npmjs.com/package/lame-excuses)
 
 ## Authors
 
 * **Luis Espinal** - *Initial work* - [SurreyCodeCamp](https://github.com/Surrey-Code-Camp)
 
-See also the list of [contributors](https://github.com/Surrey-Code-Camp/Templates) /*To be updated Later.*/ who participated in this project.
+See also the list of [Contributors.md](https://github.com/lespinalrivera/lame-excuses/blob/master/Contributors.md) who participated in this project.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](https://github.com/Surrey-Code-Camp/Templates/blob/master/LICENSE) file for details
+This project is licensed under the MIT - see the [LICENSE.md](https://github.com/lespinalrivera/lame-excuses/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
-* Contribute to these templates and be acknowledge for that
+* Contribute to these templates and be acknowledge for that on this section.
