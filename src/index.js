@@ -1,5 +1,5 @@
-var uniqueRandomArray = require('unique-random-array');
-var lameExcuses = require('./lame-excuses.json');
+import uniqueRandomArray from 'unique-random-array';
+import lameExcuses from './lame-excuses.json';
 var getRandomItem = uniqueRandomArray(lameExcuses);
 
 module.exports = {

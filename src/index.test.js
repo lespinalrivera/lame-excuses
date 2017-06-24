@@ -1,5 +1,5 @@
-var expect = require('chai').expect;
-var lameExcuses = require('./index');
+import {expect} from 'chai'
+import lameExcuses from './index'
 
 describe('lame-excuses', function() {
   it('should work!', function() {

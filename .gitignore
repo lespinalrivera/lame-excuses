@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/test,node
 
+dist
+
 ### Node ###
 # Logs
 logs

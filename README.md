@@ -1,6 +1,6 @@
-# Lame Excuses Generator
+# Lame Excuses Library
 
-**Lame Excuse Generator** - Here is an npm micro-library to get a quick random excuse.
+**Lame Excuse Library** - Here is an npm micro-library to get a quick random excuse.
 
 [![Travis Build](https://img.shields.io/travis/lespinalrivera/lame-excuses.svg?style=flat-square)](https://travis-ci.org/lespinalrivera/lame-excuses)
 [![Downloads](https://img.shields.io/npm/dt/lame-excuses.svg?style=flat-square)](https://www.npmjs.com/package/lame-excuses)

@@ -1,14 +1,17 @@
 {
   "name": "lame-excuses",
   "version": "0.0.0-semantically-released",
-  "description": "Generate Lame Excuses",
-  "main": "src/index.js",
+  "description": "Library with Lame Excuses",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha src/index.test.js -w",
-    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "test:single": "istanbul cover -x *.test.js ./node_modules/mocha/bin/_mocha -- -R spec src/index.test.js",
+    "watch:test": "npm t -- -w",
+    "test": "mocha src/index.test.js --compilers js:babel-core/register",
+    "cover": "nyc npm t",
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src --presets=es2015,stage-2",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -22,6 +25,10 @@
     "im-late",
     "excuse-generator"
   ],
+  "files": [
+    "dist",
+    "Readme.md"
+  ],
   "author": "Luis Espinal <luis@typow.ca> (https://typow.ca/)",
   "license": "MIT",
   "bugs": {
@@ -32,21 +39,34 @@
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
     "chai": "4.0.2",
     "codecov.io": "0.1.6",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.0.0",
     "ghooks": "2.0.0",
-    "istanbul": "0.4.5",
     "mocha": "3.4.2",
-    "semantic-release": "^6.3.6"
+    "nyc": "11.0.2",
+    "rimraf": "2.6.1",
+    "semantic-release": "^6.3.6",
+    "webpack": "3.0.0"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
-  },
-  "Config": {
+
+  "config": {
     "ghooks": {
-      "pre-commit": "npm run test:single && npm run check-coverage"
+      "pre-commit": "npm run cover && npm run check-coverage"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"]
   }
 }
